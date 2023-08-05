@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-font: 'Inter', sans-serif;
+    --heading-font: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: var(--main-font);
+        /* font-family: 'Inter', sanserif; */
+background: #000;
+color: #B8BCCC;
+}
+
+iframe {
+    align-self: center;
+    width: 90%;
+height: 29rem;
+padding: 2rem 0rem 3rem 0rem;
+}
+
+.map-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0rem;
+}
+
+.lat-long-info {
+    width: 30%;
+}
+
+.lower-box {
+    height: 80%;
+    background: #575A85;
+}
+
+.upper-box {
+    height: 20%;
+    width: 95%;
+    margin-left: 2rem;
+    padding: 2rem 0rem;
+}
+
+.info-display, .ip-add-fiels {
+    color: rgba(184, 188, 204, 0.50);
+font-family: Inter;
+font-size: 2.125rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.po-card {
+    width: 50%;
+    /* height: 600px; */
+    scale: 0.9;
+height: 24.9375rem;
+flex-shrink: 0;
+border-radius: 0.625rem;
+background: #575A85;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+
+/* margin: 1rem; */
+}
+
+.po-card p {
+    width: 90%;
+    color: #B8BCCC;
+font-family: Montserrat;
+font-size: 2.125rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+/* margin: 1.5rem 0rem; */
+margin-left: 2.5rem;
+}
+
+#post-office-search-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+#po-cards-box {
+    width: 93%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+#search-post-office {
+    width: 93%;
+    scale: 0.92;
+height: 3rem;
+border-radius: 0.625rem;
+border: 3px solid #575A85;
+display: flex;
+align-items: center;
+padding: 1rem;
+gap: 1rem;
+}
+
+#search-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-icon img {
+    width: 1.3rem;
+height: 1.3rem;
+padding: 1rem;
+}
+
+#search-post-office input {
+    border: none;
+    outline: none;
+    background-color: #000;
+    color: #B8BCCC;
+font-family: Montserrat;
+font-size: 2rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 19.125rem;
+}
+
+#post-offices-nearby {
+    color: #B8BCCC;
+text-align: center;
+font-family: Montserrat;
+font-size: 3rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding-bottom: 2rem;
+}
+
+#more-info-content {
+    color: rgba(184, 188, 204, 0.50);
+font-family: Inter;
+font-size: 2.125rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+display: flex;
+flex-direction: column;
+gap: 1rem;
+padding-bottom: 4rem;
+}
+
+#more-info-heading {
+    color: #B8BCCC;
+text-align: center;
+font-family: Montserrat;
+font-size: 3rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding: 1rem;
+padding-bottom: 3rem;
+}
+
+#more-info-box {
+    padding: 2rem 2rem 3rem 2rem;
+    /* width: 72.9375rem; */
+}
+
+#your-current-loaction-heading {
+    color: #B8BCCC;
+text-align: center;
+font-family: Montserrat;
+font-size: 3rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+#ip-map-box {
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+
+#ip-address-info-fields {
+    color: rgba(184, 188, 204, 0.50);
+font-family: Inter;
+font-size: 2.125rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding-bottom: 5rem;
+display: flex;
+align-items: center;
+/* justify-content: space-evenly; */
+width: 100%;
+}
+
+#current-ip-heading {
+    color: #B8BCCC;
+    font-family: Inter;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    align-self: center;
+    text-align: center;
+}
+
+#co-ordinates {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#ip-adress-info {
+    width: 72.9375rem;
+    color: rgba(184, 188, 204, 0.50);
+font-family: Montserrat;
+font-size: 2.125rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding: 2rem 0rem;
+}
+
+#co-ordinates-display {
+    color: #B8BCCC;
+}
+
+#button-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    /* scale: 0.5; */
+}
+
+#button-content button {
+    color: #B8BCCC;
+    font-family: Inter;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 21.5625rem;
+    height: 4.1875rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    border: 2px solid #B8BCCC;
+    background: #575A85;
+}
+
+#left-box {
+    background: #000;
+    width: 45%;
+    padding: 2rem;
+}
+
+#right-box {
+    background: #575A85;
+    width: 55%;
+    height: 50.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-img {
+    width: 30.125rem;
+    height: 28.875rem;
+    padding: 3.5rem 3rem 6rem 3rem;
+    scale: 0.8;
+}
+
+#post-office-app-box {
+    width: 40.6875rem;
+}
+
+#post-office-app-content {
+    color: #B8BCCC;
+    font-family: Inter;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 1rem 0rem;
+    width: 38rem;
+}
+
+#post-office-app-heading {
+    color: #575A85;
+    font-family: Montserrat;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#main-container {
+    /* width: 100%;
+height: 100%; */
+    display: flex;
+    align-items: center;
+}
+
+#content-box-main {
+    display: block;
+}
+
+#content-box-after-click {
+    display: none;
+}
